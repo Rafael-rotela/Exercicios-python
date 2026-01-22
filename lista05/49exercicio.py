@@ -1,4 +1,4 @@
-"""
+
 lista = []
 soma = 0 
 while True:
@@ -19,21 +19,5 @@ for num in lista:
     else:
         break
 print("A media dos pares é ")
-"""
 
-soma = 0 
-qnt_numero = 0
-media_num = 0
-maior = 0 
-menor = 0
-media_pares = 0 
-
-numero = float(input('quantos numeros você deseja digitar: '))
-i = 0 
-while i < numero:
-    if numero == 0:
-        break 
-    else:
-        print('a')
-        i += 1
     
