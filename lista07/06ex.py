@@ -1,4 +1,7 @@
-def loja (quantidade = 0, preco = 1.99):
-    return f"quantidade: {quantidade} valor: {quantidade*preco}"
+def loja (preco):
+    i = 0 
+    while i <=49:
+        i += 1
+        print(f"quantidade: {i} valor: {i*preco}")
 
-print(loja(2))
+loja(1.99)

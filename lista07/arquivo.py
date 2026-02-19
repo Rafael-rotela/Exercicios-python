@@ -39,3 +39,6 @@ with open('./meu_arquivo.txt', 'r' , encoding='utf-8') as arq:
     leitor = arq.read()
 print(conteudo)
 print(leitor)
+arq.close()
+
+
