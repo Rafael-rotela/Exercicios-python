@@ -1,11 +1,9 @@
-# Parametro nomeados -------------->> nome  = 'Rafael'
+"""
+15  Crie uma função que receba múltiplos argumentos não nomeados, considere que a função receba números inteiros como argumentos e retorne a soma dos argumentos.
+"""
 
-def cadastro_cnh(**kwargs):
-    print(kwargs)
-    if kwargs['idade'] >= 18:
-        return True
-    else:
-        return False
-    
-x = cadastro_cnh(nome = 'Thiago', idade=15,sexo='M')
+
+def somar(*args):
+    return sum(args)
+x = somar(2,3,4,5,6,7,8,9)
 print(x)
