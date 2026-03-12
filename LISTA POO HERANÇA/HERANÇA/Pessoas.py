@@ -25,6 +25,15 @@ class Professor(Pessoa):
         self.carga_horaria = carga_horaria
         self.salario = salario
 
+    def get_formacao(self):
+        return self.formacao
+    def set_formacao(self,nova_formacao):
+        self.formacao = nova_formacao
+
+    def get_salario(self):
+        return self.salario
+    def set_salario(self,novo_salario):
+        self.salario = novo_salario
 
     def set_formacao(self,nova_formacao):
         self.nova_formacao = nova_formacao
@@ -39,6 +48,9 @@ class Aluno(Pessoa):
         self.nota4 = nota4
         self.estudar = estudar
 
-    def definir_media(self):
+    def calcular_media(self):
         calculo = (self.nota1 +self.nota2 +self.nota3 +self.nota4)/4
         return calculo
+
+    def estudando(self):
+        self.estudar = True
